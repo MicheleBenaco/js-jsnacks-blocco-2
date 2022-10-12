@@ -7,11 +7,13 @@ const div = document.querySelector('.risultato')
 
  function calcolo (){
     let datoUtente = document.getElementById('numeroUtente');
+    console.log(datoUtente)
     if(datoUtente %2 == 0 ){
         div.innerHTML = "Numero Pari";
 
     }else{
         div.innerHTML =  "il nuemro non e pari " + datoUtente++ ;
+        console.log(datoUtente)
     }
 
 }
