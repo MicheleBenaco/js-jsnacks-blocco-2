@@ -5,13 +5,13 @@
 const bottone = document.getElementById('btn')
 const div = document.querySelector('.risultato')
 
-calcolo =  function(){
+ function calcolo (){
     let datoUtente = document.getElementById('numeroUtente');
-    if(parseInt(datoUtente) / 2 ){
+    if(datoUtente %2 == 0 ){
         div.innerHTML = "Numero Pari";
 
     }else{
-        div.innerHTML = datoUtente++ ;
+        div.innerHTML =  "il nuemro non e pari " + datoUtente++ ;
     }
 
 }
