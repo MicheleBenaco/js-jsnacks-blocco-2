@@ -32,5 +32,19 @@ let myRandomListaCognomi = listaCognome[Math.floor(Math.random() * listaCognome.
 console.log(myRandomListaNomi,myRandomListaCognomi)
 let myElm = document.createElement("h2");
 myElm.innerText = myRandomListaNomi + " " + myRandomListaCognomi;
-document.body.appendChild(myElm);
+document.body.append(myElm);
 // ---------------------- es3---------------
+// creare un array di numeri 
+// e sommare tutti i numeri dispari 
+
+
+let numeri = [ '1','2','3','3','4','5','6','7','8','9','10','11','12',]
+const h2 = document.querySelector('.numeri')
+let sum = 0;
+
+    for(let i = 0; i < numeri.length;  i++){
+        if(numeri[i] %2 !== 0 ){
+         sum += numeri[i] 
+          h2.innerHTML = sum;
+        }
+    }
